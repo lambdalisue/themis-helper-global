@@ -60,9 +60,9 @@ global.with({events})				*themis-helper-global-with()*
 <
 You may need to add the following lines to enable the global helper.
 >
-	call themis#option(
-	      \ 'runtimepath',
-	      \ 'path to themis-helper-global',
+	execute printf(
+	      \ 'set runtimepath^=%s',
+	      \ fnameescape('path to themis-helper-global'),
 	      \)
 <
 =============================================================================

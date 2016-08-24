@@ -25,9 +25,9 @@ Example
 
 ```vim
 " .themisrc
-call themis#option(
-      \ 'runtimepath',
-      \ 'path to themis-helper-global',
+execute printf(
+      \ 'set runtimepath^=%s',
+      \ fnameescape('path to themis-helper-global'),
       \)
 
 let s:events = {}
